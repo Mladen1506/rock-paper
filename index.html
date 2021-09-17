@@ -9,49 +9,6 @@
 <body>
     <h1 style="text-align:center; margin-top:20%;">
         Let's play Rock Paper Scissors</h1>
-        <script type="text/javascript">
-            var gameChoices = ['r', 'p', 's'];
-
-            var wins = 0;
-            var losses = 0;
-            var ties = 0;
-
-            for(var i = 0; i < 3; i++) {
-                var computerTurn = 
-                gameChoices[Math.floor(Math.random() * gameChoices.length)];
-
-                var userTurn = prompt('Enter r, p or s to play');
-                userTurn = userTurn.toLowerCase();
-                if (userTurn === 'r' || userTurn === 'p' || userTurn === 's') {
-                    alert('The computer chose ' + computerTurn);
-                    if(
-                        (userTurn === 'r' && computerTurn === 's') ||
-                        (userTurn === 's' && computerTurn === 'p') ||
-                        (userTurn === 'p' && computerTurn === 'r')
-                    )   {
-                        wins ++;
-                        alert("You've won " + wins + ' time(s).' );
-                    } else if (userTurn === computerTurn){
-                        ties++;
-                        alert("You've tied " + ties + ' time(s).');
-                    } else{
-                        losses++;
-                        alert("You've lost " + losses + ' time(s).');
-                    }
-                } else {
-                alert("Please choose 'r', 'p' or 's'!");
-            }
-        }
-
-        alert(
-        'Total wins: ' +
-          wins +
-          '\nTotal ties: ' +
-          ties +
-          '\nTotal losses: ' +
-          losses
-      );
         
-        </script>
 </body>
 </html>
