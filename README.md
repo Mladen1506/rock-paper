@@ -9,6 +9,7 @@ A simple game Rock-Paper-Scissors created using functions
 * HTML
 
 ## Website
+https://mladen1506.github.io/rock-paper/
 
 ## Contribution
 
